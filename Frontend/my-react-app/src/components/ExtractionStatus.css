@@ -1,0 +1,52 @@
+.extraction-status {
+  margin-top: 1.5rem;
+}
+
+.status-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.status-message.info {
+  background-color: #e3f2fd;
+  border: 1px solid #2196f3;
+  color: #0d47a1;
+}
+
+.status-message.success {
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+  color: #1b5e20;
+}
+
+.status-message.error {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+  color: #b71c1c;
+}
+
+.status-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.status-message strong {
+  font-weight: 600;
+}
+

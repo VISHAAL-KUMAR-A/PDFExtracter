@@ -1,0 +1,15 @@
+﻿,Data Extraction Template - Private Equity Funds,
+,,
+,,
+#,Tab,Description
+1,Fund and Investment Vehicle Information,"Standard details about the Fund, Fund Partnership, and Investment Vehicle. While much of this data may be static, updates might be needed during fundraising or if the fund’s term is extended."
+2,Fund Manager,Standard details about the Manager (GP) who is running the fund. Much of this data is static
+3,Fund Investment Vehicle Financial Position,Investment Vehicle is the last layer in the financial structure that is used to deploy the funds into a company or investment. Current cumulative financial position of the Investment Vehicle as of the reporting date. Requires quarterly updates. 
+4,LP Investor cashflows,"Comprehensive list of transactions between the Investment Vehicle and its investors, including quarterly Net Asset Values post carried interest deduction."
+5,Fund Companies,Key details of the companies in which the fund has invested. Include realized investments. Updates required for new investments.
+6,Initial Investments,Positions of the Investment Vehicle in invested companies as of the investment date. Must include all realized investments with data as of the reporting date. Updates required for new investments.
+7,Company Investment Positions,Current positions in invested companies as of the reporting date. Include realized investments with relevant data. Requires quarterly updates.
+8,Company Valuation,Valuation details of companies at the current reporting or exit date.
+9,Company Financials,"Most recent profit & loss, balance sheet, and debt maturity information."
+10,Investment History,"Full list of historical transactions between the Investment Vehicle and portfolio companies, including investment amounts, distributions, and valuations. Further transaction-level details are encouraged."
+14,Reference Values,"List of accepted values for dropdown fields (e.g., countries, currencies)."
