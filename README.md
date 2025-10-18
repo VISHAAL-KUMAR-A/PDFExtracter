@@ -1,13 +1,13 @@
 # 📄 PDF Extraction Tool Using LLM
 
-A powerful web application that extracts structured data from PDF files using AI (Google Gemini) and outputs the results in Excel format. Built with React frontend and FastAPI backend.
+A powerful web application that extracts structured data from PDF files using AI (OpenAI GPT-4o-mini) and outputs the results in Excel format. Built with React frontend and FastAPI backend.
 
 ## 🎯 Project Overview
 
 This tool allows users to:
 - Upload single or multiple PDF files
 - Select between two extraction templates for Private Equity Fund documents
-- Process PDFs using Google Gemini AI for intelligent data extraction
+- Process PDFs using OpenAI GPT-4o-mini for intelligent data extraction
 - Download extracted data as formatted Excel (.xlsx) files
 
 ## 🏗️ Architecture
@@ -20,7 +20,7 @@ PDFExtraction/
 │   ├── .env                   # Environment variables
 │   └── services/              # Service modules
 │       ├── pdf_extractor.py   # PDF text extraction
-│       ├── llm_service.py     # Gemini LLM integration
+│       ├── llm_service.py     # OpenAI LLM integration
 │       └── excel_generator.py # Excel file generation
 │
 ├── Frontend/                  # React frontend
@@ -74,9 +74,9 @@ PDFExtraction/
    ```
 
 4. **Configure environment variables:**
-   The `.env` file is already created with the Gemini API key. If you need to change it:
+   The `.env` file is already created with the OpenAI API key. If you need to change it:
    ```bash
-   GEMINI_API_KEY=your_api_key_here
+   OPENAI_API_KEY=your_openai_api_key_here
    ```
 
 5. **Run the backend server:**
@@ -287,9 +287,8 @@ Simply change the `template_id` parameter in your request:
 ### Backend
 - **FastAPI**: Modern Python web framework
 - **pdfplumber**: PDF text and table extraction
-- **google-generativeai**: Gemini LLM integration
+- **openai**: OpenAI GPT-4o-mini integration
 - **openpyxl**: Excel file generation
-- **pandas**: Data manipulation
 - **python-dotenv**: Environment variable management
 
 ### Frontend
@@ -298,7 +297,7 @@ Simply change the `template_id` parameter in your request:
 - **CSS3**: Styling with modern features
 
 ### AI Model
-- **Google Gemini 1.5 Flash**: For intelligent data extraction
+- **OpenAI GPT-4o-mini**: For intelligent data extraction
 
 ## 📋 Features
 
@@ -364,7 +363,7 @@ Backend/outputs/
 pip install -r requirements.txt
 ```
 
-**Issue:** Gemini API errors
+**Issue:** OpenAI API errors
 ```bash
 # Solution: Check your API key in .env file
 # Ensure the API key has proper permissions
@@ -418,7 +417,7 @@ This project is created as an internship task.
 
 ## 👥 Credits
 
-- **LLM**: Google Gemini 1.5 Flash
+- **LLM**: OpenAI GPT-4o-mini
 - **PDF Processing**: pdfplumber
 - **Excel Generation**: openpyxl
 - **Frontend**: React + Vite
@@ -433,5 +432,5 @@ For issues or questions:
 
 ---
 
-**Note:** This tool is designed for Private Equity Fund document extraction. The accuracy of extraction depends on the quality and structure of the input PDF files.
+**Note:** This tool is designed for Private Equity Fund document extraction. The accuracy of extraction depends on the quality and structure of the input PDF files. Uses OpenAI GPT-4o-mini for reliable and fast data extraction.
 
