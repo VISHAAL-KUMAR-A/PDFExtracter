@@ -325,7 +325,7 @@ Simply change the `template_id` parameter in your request:
 
 Create or modify `Backend/.env`:
 ```env
-GEMINI_API_KEY=your_gemini_api_key
+OPEN_API_KEY=your_open_api_key
 ```
 
 ### CORS Configuration
